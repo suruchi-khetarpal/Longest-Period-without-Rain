@@ -1,0 +1,11 @@
+# Sample Test Run 1
+maxDryPeriod,startDay=analyzeForecast([1,1,0,0,0,0,1,1,0,0,1,0,0,0])
+print(f'maxDryPeriod={maxDryPeriod} startDay={startDay}')
+
+# Sample Test Run 2
+maxDryPeriod,startDay=analyzeForecast([0,0,0,0,1,1,1,0,0,0,0,0,0,0])
+print(f'maxDryPeriod={maxDryPeriod} startDay={startDay}')
+
+# Sample Test Run 3
+maxDryPeriod,startDay=analyzeForecast([0,1,0,0,1,1,1,0,0,0,1,0,0,0])
+print(f'maxDryPeriod={maxDryPeriod} startDay={startDay}')
