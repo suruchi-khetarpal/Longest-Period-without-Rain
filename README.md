@@ -1,0 +1,2 @@
+# Longest-Period-without-Rain
+Make a tool to help a roofing company plan its work given a forecast of whether it will rain in a period of consecutive days. Write a function called analyzeForecast with one input argument:  forecast: a list of 1's and 0's indicating whether it will rain on a given day. Each 1 indicates that it will rain on that day and 0 indicates that it will not. The first entry of the list corresponds to Day 0, the second entry to Day 1, etc.
