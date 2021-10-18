@@ -1,0 +1,17 @@
+def analyzeForecast(forecast):
+    maxDryDays = 0
+    firstDryday = 0
+    tempMaxDryDays = 0
+    tempFirstDryday = 0
+    for i in range(len(forecast)):
+        if forecast[i] == 0:
+            if tempMaxDryDays == 0:
+                tempFirstDryday = i
+            tempMaxDryDays+=1
+        if (forecast[i] == 1) or (i == len(forecast)- 1):
+            if tempMaxDryDays > maxDryDays:
+                maxDryDays = tempMaxDryDays
+                firstDryday = tempFirstDryday
+            tempMaxDryDays = 0
+            tempFirstDryday = 0
+    return maxDryDays,firstDryday
